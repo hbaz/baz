@@ -1,0 +1,15 @@
+{
+  "provenance": "synthetic",
+  "source": "fmcsa_news",
+  "note": "Synthesized fixture in the real shape of an agency newsroom page. Every official's name, quotation and release is invented; no page was recorded (this source names people: names_people true).",
+  "case": "changed layout: the list is a USWDS collection (li.usa-collection__item), not .view-content .views-row; the pack's rules match zero entries",
+  "request": {
+    "method": "GET",
+    "url": "https://www.fmcsa.dot.gov/newsroom/press-releases"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "response": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Press Releases | FMCSA</title>\n  <script>window.dataLayer = window.dataLayer || [];</script>\n  <style>.visually-hidden{position:absolute}</style>\n</head>\n<body class=\"path-node page-node-type-news\">\n  <a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">Skip to main content</a>\n  <header class=\"usa-header\" role=\"banner\"><nav class=\"usa-nav\" aria-label=\"Primary navigation\"><ul class=\"usa-nav__primary\"><li><a href=\"/\">Home</a><li><a href=\"/newsroom\">Newsroom</a></ul></nav></header>\n  <main id=\"main-content\" class=\"usa-layout-docs\">\n    <h1>Newsroom: Press Releases</h1>\n    <section class=\"news-listing\" aria-label=\"Press releases\">\n      <ul class=\"usa-collection\">\n        <li class=\"usa-collection__item\">\n          <div class=\"usa-collection__body\">\n            <h3 class=\"usa-collection__heading\"><a class=\"usa-link\" href=\"/newsroom/fmcsa-extends-comment-period-cdl-skills-testing-proposal\">FMCSA Extends Comment Period on CDL Skills Testing Proposal</a></h3>\n            <ul class=\"usa-collection__meta\" aria-label=\"More information\"><li class=\"usa-collection__meta-item\"><time datetime=\"2026-10-08\">Oct. 8, 2026</time></li></ul>\n          </div>\n        </li>\n        <li class=\"usa-collection__item\">\n          <div class=\"usa-collection__body\">\n            <h3 class=\"usa-collection__heading\"><a class=\"usa-link\" href=\"/newsroom/fmcsa-launches-clearinghouse-query-dashboard-state-licensing-agencies\">FMCSA Launches Clearinghouse Query Dashboard for State Licensing Agencies</a></h3>\n            <ul class=\"usa-collection__meta\" aria-label=\"More information\"><li class=\"usa-collection__meta-item\"><time datetime=\"2026-10-07\">Oct. 7, 2026</time></li></ul>\n          </div>\n        </li>\n      </ul>\n    </section>\n  </main>\n  <footer class=\"usa-footer\"><p>An official website of the United States government</p></footer>\n</body>\n</html>\n"
+}

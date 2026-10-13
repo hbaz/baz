@@ -1,0 +1,15 @@
+{
+  "provenance": "synthetic",
+  "source": "example_feed",
+  "note": "Synthesized feed in the real RSS 2.0 / Atom 1.0 shape for an invented agency newsroom (newsroom.example.org). Every name is invented; nothing was recorded.",
+  "case": "Atom 1.0: two entries in the window, one dated by published, one by updated",
+  "request": {
+    "method": "GET",
+    "url": "https://newsroom.example.org/feeds/announcements.atom"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/atom+xml; charset=utf-8"
+  },
+  "response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- provenance: synthetic -->\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n  <title>Example Transportation Agency - Announcements</title>\n  <id>tag:newsroom.example.org,2026:announcements</id>\n  <updated>2026-10-09T16:00:00Z</updated>\n  <link rel=\"self\" href=\"https://newsroom.example.org/feeds/announcements.atom\"/>\n  <link rel=\"alternate\" href=\"https://newsroom.example.org/announcements\"/>\n  <entry>\n    <title type=\"text\">Agency Names New Chief of Driver Programs</title>\n    <id>tag:newsroom.example.org,2026:ann-1008</id>\n    <link rel=\"alternate\" type=\"text/html\" href=\"https://newsroom.example.org/announcements/2026/chief-of-driver-programs\"/>\n    <published>2026-10-08T13:00:00Z</published>\n    <updated>2026-10-08T15:00:00Z</updated>\n    <author><name>Office of Public Affairs</name></author>\n    <summary type=\"html\">&lt;p&gt;The agency today named Philippa Coldharbour as Chief of Driver Programs.&lt;/p&gt;</summary>\n  </entry>\n  <entry>\n    <title type=\"text\">Agency Updates REAL ID Outreach Toolkit</title>\n    <id>tag:newsroom.example.org,2026:ann-1009</id>\n    <link rel=\"alternate\" type=\"text/html\" href=\"https://newsroom.example.org/announcements/2026/real-id-outreach-toolkit\"/>\n    <updated>2026-10-09T12:00:00Z</updated>\n    <content type=\"html\">&lt;p&gt;The agency updated the outreach toolkit states use to explain REAL ID requirements.&lt;/p&gt;</content>\n  </entry>\n</feed>\n"
+}

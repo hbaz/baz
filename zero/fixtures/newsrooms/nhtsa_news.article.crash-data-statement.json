@@ -1,0 +1,15 @@
+{
+  "provenance": "synthetic",
+  "source": "nhtsa_news",
+  "note": "Synthesized fixture in the real shape of an agency newsroom page. Every official's name, quotation and release is invented; no page was recorded (this source names people: names_people true).",
+  "case": "malformed article: the body field is empty, so a required field is missing",
+  "request": {
+    "method": "GET",
+    "url": "https://www.nhtsa.gov/press-releases/nhtsa-statement-state-crash-data-reporting"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "response": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>NHTSA Statement on State Crash Data Reporting | NHTSA</title>\n  <script>window.dataLayer = window.dataLayer || [];</script>\n  <style>.visually-hidden{position:absolute}</style>\n</head>\n<body class=\"path-node page-node-type-news\">\n  <a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">Skip to main content</a>\n  <header class=\"usa-header\" role=\"banner\"><nav class=\"usa-nav\" aria-label=\"Primary navigation\"><ul class=\"usa-nav__primary\"><li><a href=\"/\">Home</a><li><a href=\"/newsroom\">Newsroom</a></ul></nav></header>\n  <main id=\"main-content\" role=\"main\">\n    <article class=\"node node--type-news node--view-mode-full\">\n      <h1 class=\"page-title\"><span class=\"field field--name-title\">NHTSA Statement on State Crash Data Reporting</span></h1>\n      <div class=\"node__meta\"><div class=\"date\"><time datetime=\"2026-10-08T12:00:00Z\">October 8, 2026</time></div></div>\n      <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">\n\n      </div>\n    </article>\n  </main>\n  <footer class=\"usa-footer\"><p>An official website of the United States government</p></footer>\n</body>\n</html>\n"
+}
