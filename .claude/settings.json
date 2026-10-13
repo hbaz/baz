@@ -1,1 +1,5 @@
-"allow": ["Workflow"]
+{
+  "permissions": {
+    "allow": ["Workflow"]
+  }
+}
