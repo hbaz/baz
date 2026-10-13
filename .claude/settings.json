@@ -1,5 +1,11 @@
 {
   "permissions": {
     "allow": ["Workflow"]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Running the Workflow tool on generated stage-NNN.js scripts under out/run/workflow/ as part of the scheduled RegWatch run (python3 zero/run.py)"
+    ]
   }
 }
