@@ -1,0 +1,171 @@
+{
+  "provenance": "synthetic",
+  "source": "fedreg_pi",
+  "note": "Synthesized fixture in the real Federal Register API response shape. Every person's name, company and document number is invented; no response was recorded (this source names people: names_people true).",
+  "request": {
+    "method": "GET",
+    "url": "https://www.federalregister.gov/api/v1/public-inspection-documents.json?conditions%5Bavailable_on%5D=2026-10-08"
+  },
+  "status": 200,
+  "response": {
+    "count": 3,
+    "results": [
+      {
+        "agencies": [
+          {
+            "raw_name": "DEPARTMENT OF TRANSPORTATION",
+            "name": "Transportation Department",
+            "id": 492,
+            "url": "https://www.federalregister.gov/agencies/transportation-department",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/492",
+            "parent_id": null,
+            "slug": "transportation-department"
+          },
+          {
+            "raw_name": "FEDERAL MOTOR CARRIER SAFETY ADMINISTRATION",
+            "name": "Federal Motor Carrier Safety Administration",
+            "id": 160,
+            "url": "https://www.federalregister.gov/agencies/federal-motor-carrier-safety-administration",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/160",
+            "parent_id": 492,
+            "slug": "federal-motor-carrier-safety-administration"
+          }
+        ],
+        "agency_names": [
+          "Transportation Department",
+          "Federal Motor Carrier Safety Administration"
+        ],
+        "agency_letters": [],
+        "docket_numbers": [
+          "FMCSA-2026-0230"
+        ],
+        "document_number": "2026-90301",
+        "editorial_note": null,
+        "excerpts": null,
+        "filed_at": "2026-10-08T08:45:00.000-04:00",
+        "filing_type": "regular",
+        "html_url": "https://www.federalregister.gov/public-inspection/2026-90301/commercial-driver's-license-standards",
+        "json_url": "https://www.federalregister.gov/api/v1/public-inspection-documents/2026-90301.json",
+        "last_public_inspection_issue": "2026-10-08",
+        "num_pages": 31,
+        "pdf_file_name": "2026-90301.pdf",
+        "pdf_file_size": 831000,
+        "pdf_updated_at": "2026-10-08T08:45:00.000-04:00",
+        "pdf_url": "https://public-inspection.federalregister.gov/2026-90301.pdf",
+        "publication_date": "2026-10-09",
+        "raw_text_url": "https://www.federalregister.gov/public-inspection/raw_text/2026-90301.txt",
+        "subject_1": "Commercial Driver's License Standards",
+        "subject_2": "Knowledge Test Translation and Interpreter Use",
+        "subject_3": null,
+        "title": "Commercial Driver's License Standards; Knowledge Test Translation and Interpreter Use",
+        "toc_doc": "Knowledge Test Translation and Interpreter Use",
+        "toc_subject": "Commercial Driver's License Standards",
+        "type": "Proposed Rule"
+      },
+      {
+        "agencies": [
+          {
+            "raw_name": "DEPARTMENT OF TRANSPORTATION",
+            "name": "Transportation Department",
+            "id": 492,
+            "url": "https://www.federalregister.gov/agencies/transportation-department",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/492",
+            "parent_id": null,
+            "slug": "transportation-department"
+          },
+          {
+            "raw_name": "FEDERAL MOTOR CARRIER SAFETY ADMINISTRATION",
+            "name": "Federal Motor Carrier Safety Administration",
+            "id": 160,
+            "url": "https://www.federalregister.gov/agencies/federal-motor-carrier-safety-administration",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/160",
+            "parent_id": 492,
+            "slug": "federal-motor-carrier-safety-administration"
+          }
+        ],
+        "agency_names": [
+          "Transportation Department",
+          "Federal Motor Carrier Safety Administration"
+        ],
+        "agency_letters": [],
+        "docket_numbers": [
+          "FMCSA-2026-0102"
+        ],
+        "document_number": "2026-90302",
+        "editorial_note": null,
+        "excerpts": null,
+        "filed_at": "2026-10-08T08:45:00.000-04:00",
+        "filing_type": "regular",
+        "html_url": "https://www.federalregister.gov/public-inspection/2026-90302/qualification-of-drivers",
+        "json_url": "https://www.federalregister.gov/api/v1/public-inspection-documents/2026-90302.json",
+        "last_public_inspection_issue": "2026-10-08",
+        "num_pages": 6,
+        "pdf_file_name": "2026-90302.pdf",
+        "pdf_file_size": 306000,
+        "pdf_updated_at": "2026-10-08T08:45:00.000-04:00",
+        "pdf_url": "https://public-inspection.federalregister.gov/2026-90302.pdf",
+        "publication_date": "2026-10-09",
+        "raw_text_url": "https://www.federalregister.gov/public-inspection/raw_text/2026-90302.txt",
+        "subject_1": "Qualification of Drivers",
+        "subject_2": "Exemption Renewals; Epilepsy and Seizure Disorders",
+        "subject_3": null,
+        "title": "Qualification of Drivers; Exemption Renewals; Epilepsy and Seizure Disorders",
+        "toc_doc": "Exemption Renewals; Epilepsy and Seizure Disorders",
+        "toc_subject": "Qualification of Drivers",
+        "type": "Notice"
+      },
+      {
+        "agencies": [
+          {
+            "raw_name": "DEPARTMENT OF TRANSPORTATION",
+            "name": "Transportation Department",
+            "id": 492,
+            "url": "https://www.federalregister.gov/agencies/transportation-department",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/492",
+            "parent_id": null,
+            "slug": "transportation-department"
+          },
+          {
+            "raw_name": "FEDERAL HIGHWAY ADMINISTRATION",
+            "name": "Federal Highway Administration",
+            "id": 161,
+            "url": "https://www.federalregister.gov/agencies/federal-highway-administration",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/161",
+            "parent_id": 492,
+            "slug": "federal-highway-administration"
+          }
+        ],
+        "agency_names": [
+          "Transportation Department",
+          "Federal Highway Administration"
+        ],
+        "agency_letters": [],
+        "docket_numbers": [
+          "FHWA-2026-0019"
+        ],
+        "document_number": "2026-90303",
+        "editorial_note": null,
+        "excerpts": null,
+        "filed_at": "2026-10-08T11:15:00.000-04:00",
+        "filing_type": "special",
+        "html_url": "https://www.federalregister.gov/public-inspection/2026-90303/national-highway-performance-program",
+        "json_url": "https://www.federalregister.gov/api/v1/public-inspection-documents/2026-90303.json",
+        "last_public_inspection_issue": "2026-10-08",
+        "num_pages": 4,
+        "pdf_file_name": "2026-90303.pdf",
+        "pdf_file_size": 264000,
+        "pdf_updated_at": "2026-10-08T11:15:00.000-04:00",
+        "pdf_url": "https://public-inspection.federalregister.gov/2026-90303.pdf",
+        "publication_date": "2026-10-09",
+        "raw_text_url": "https://www.federalregister.gov/public-inspection/raw_text/2026-90303.txt",
+        "subject_1": "National Highway Performance Program",
+        "subject_2": "Vehicle Registration Data Sharing Pilot",
+        "subject_3": null,
+        "title": "National Highway Performance Program; Vehicle Registration Data Sharing Pilot",
+        "toc_doc": "Vehicle Registration Data Sharing Pilot",
+        "toc_subject": "National Highway Performance Program",
+        "type": "Notice"
+      }
+    ]
+  }
+}

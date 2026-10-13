@@ -1,0 +1,92 @@
+# AAMVA pack - watchlist: agencies and committees.
+# Data, not code. Drawn from v3's intent only (its text is not copied).
+#
+# agencies:   the federal agencies the pack watches. `fedreg_slug` is the
+#             Federal Register agency slug used by the fedreg and fedreg_pi
+#             sources (conditions[agencies][]); the `agency` field of each
+#             source file refers to these ids.
+#             VERIFY each slug against https://www.federalregister.gov/api/v1/agencies.json
+#             before the first live run (recorded in the source verify notes).
+# committees: who inside the organization cares about an area, and their
+#             current priorities. Priorities are keywords: a match raises the
+#             `watched_committee_priority` escalation signal (impact.yaml).
+#             Names and priorities are a starting set for Government Affairs
+#             to confirm; priorities change monthly and are edited in the Pack
+#             admin screen. No people are named here.
+
+agencies:
+  - id: usdot
+    name: "U.S. Department of Transportation (Office of the Secretary)"
+    fedreg_slug: "transportation-department"
+    policy_areas: [driver_licensing, commercial_driver, motor_carrier, highway_traffic_safety, emerging_technology, privacy_data_security]
+  - id: nhtsa
+    name: "National Highway Traffic Safety Administration"
+    fedreg_slug: "national-highway-traffic-safety-administration"
+    policy_areas: [vehicle_safety, highway_traffic_safety, vehicle_titling_registration, emerging_technology]
+  - id: fmcsa
+    name: "Federal Motor Carrier Safety Administration"
+    fedreg_slug: "federal-motor-carrier-safety-administration"
+    policy_areas: [commercial_driver, motor_carrier, law_enforcement]
+  - id: fhwa
+    name: "Federal Highway Administration"
+    fedreg_slug: "federal-highway-administration"
+    policy_areas: [motor_carrier, highway_traffic_safety]
+  - id: dhs
+    name: "Department of Homeland Security"
+    fedreg_slug: "homeland-security-department"
+    policy_areas: [identity_credentials, privacy_data_security]
+  - id: tsa
+    name: "Transportation Security Administration"
+    fedreg_slug: "transportation-security-administration"
+    policy_areas: [identity_credentials, commercial_driver]
+
+committees:
+  # Internal committees (stakeholders). Confirm names with Government Affairs.
+  - id: driver_committee
+    label: "Driver committee"
+    kind: internal
+    policy_areas: [driver_licensing, commercial_driver, identity_credentials]
+    priorities: ["non-domiciled", "entry-level driver training", "drug and alcohol clearinghouse", "mobile driver's license", "REAL ID"]
+  - id: vehicle_committee
+    label: "Vehicle committee"
+    kind: internal
+    policy_areas: [vehicle_titling_registration, vehicle_safety, emerging_technology]
+    priorities: ["odometer", "salvage", "recall notification", "electric vehicle", "automated driving"]
+  - id: law_enforcement_committee
+    label: "Law enforcement committee"
+    kind: internal
+    policy_areas: [law_enforcement, highway_traffic_safety, motor_carrier]
+    priorities: ["impaired driving", "conviction reporting", "out-of-service", "crash report"]
+  - id: identity_committee
+    label: "Identity management committee"
+    kind: internal
+    policy_areas: [identity_credentials, privacy_data_security]
+    priorities: ["identity proofing", "digital identity", "document security", "data breach"]
+
+  # Congressional committees with jurisdiction over watched areas (public).
+  # Used as signals when an item names them; Congress.gov is not a day-one source.
+  - id: senate_commerce
+    label: "Senate Committee on Commerce, Science, and Transportation"
+    kind: congressional
+    policy_areas: [vehicle_safety, motor_carrier, highway_traffic_safety, emerging_technology]
+    priorities: []
+  - id: house_transportation
+    label: "House Committee on Transportation and Infrastructure"
+    kind: congressional
+    policy_areas: [motor_carrier, commercial_driver, highway_traffic_safety]
+    priorities: []
+  - id: house_energy_commerce
+    label: "House Committee on Energy and Commerce"
+    kind: congressional
+    policy_areas: [vehicle_safety, emerging_technology, privacy_data_security]
+    priorities: []
+  - id: senate_homeland_security
+    label: "Senate Committee on Homeland Security and Governmental Affairs"
+    kind: congressional
+    policy_areas: [identity_credentials, privacy_data_security]
+    priorities: []
+  - id: house_homeland_security
+    label: "House Committee on Homeland Security"
+    kind: congressional
+    policy_areas: [identity_credentials]
+    priorities: []

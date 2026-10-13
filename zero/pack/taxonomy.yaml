@@ -1,0 +1,98 @@
+# AAMVA pack - policy areas (taxonomy).
+# Data, not code. Drawn from v3's intent only (its text is not copied).
+# The closed vocabulary for the `policy_area` and `stage` fields of every
+# classified record; zero/validate.py rejects any value not listed here.
+# Order is the digest section order (sections are built in code, in this order).
+#
+# Scope: public federal regulatory and policy activity relevant to motor
+# vehicle and driver administration. Program and system names are NOT kept
+# here (private overlay only; see docs/plans/regwatch-modular/review.md s4).
+#
+# Government Affairs owns these values. The list and wording below are a
+# starting set to confirm with them; edit through the Pack admin screen.
+
+pack:
+  id: aamva
+  version: 1
+  display_name: "AAMVA federal regulatory watch"
+
+policy_areas:
+  - id: driver_licensing
+    label: "Driver licensing"
+    order: 1
+    description: "Non-commercial driver licensing: testing, issuance, renewal, medical standards, older and novice drivers, licence sanctions."
+    keywords: ["driver license", "driver's license", "driver licensing", "learner's permit", "graduated driver", "license renewal", "driver testing"]
+  - id: commercial_driver
+    label: "Commercial driver licensing"
+    order: 2
+    description: "CDL and CLP standards, testing, medical certification, drug and alcohol clearinghouse, disqualification, entry-level training, non-domiciled CDLs."
+    keywords: ["commercial driver", "CDL", "commercial learner's permit", "CLP", "entry-level driver training", "drug and alcohol clearinghouse", "medical examiner", "non-domiciled", "disqualification"]
+  - id: identity_credentials
+    label: "Identity and secure credentials"
+    order: 3
+    description: "REAL ID, identity proofing, document security, mobile driver's licences and digital identity, lawful presence verification."
+    keywords: ["REAL ID", "identity verification", "identity proofing", "mobile driver's license", "mDL", "digital identity", "lawful presence", "document security"]
+  - id: vehicle_titling_registration
+    label: "Vehicle titling and registration"
+    order: 4
+    description: "Titling, registration, odometer disclosure, salvage and total-loss vehicles, vehicle history and theft."
+    keywords: ["title", "titling", "vehicle registration", "odometer", "salvage", "junk vehicle", "total loss", "vehicle history", "VIN"]
+  - id: motor_carrier
+    label: "Motor carrier operations"
+    order: 5
+    description: "Interstate motor carrier registration and safety oversight, International Registration Plan and fuel tax matters, hours of service, carrier enforcement."
+    keywords: ["motor carrier", "USDOT number", "unified carrier registration", "International Registration Plan", "IRP", "IFTA", "hours of service", "out-of-service"]
+  - id: vehicle_safety
+    label: "Vehicle safety and equipment"
+    order: 6
+    description: "Federal motor vehicle safety standards, recalls and recall notification, equipment and inspection requirements."
+    keywords: ["FMVSS", "motor vehicle safety standard", "recall", "safety defect", "equipment standard", "vehicle inspection"]
+  - id: highway_traffic_safety
+    label: "Highway and traffic safety"
+    order: 7
+    description: "Traffic safety programs, impaired and distracted driving, crash data and reporting, highway safety grants to states."
+    keywords: ["highway safety", "impaired driving", "distracted driving", "crash report", "traffic records", "highway safety grant", "Section 405", "Section 402"]
+  - id: law_enforcement
+    label: "Law enforcement and records exchange"
+    order: 8
+    description: "Roadside enforcement, conviction reporting and records exchange between jurisdictions, enforcement data sharing."
+    keywords: ["law enforcement", "conviction reporting", "records exchange", "roadside inspection", "traffic enforcement"]
+  - id: privacy_data_security
+    label: "Privacy and data security"
+    order: 9
+    description: "Driver and vehicle record privacy, data sharing rules, cybersecurity requirements affecting state systems."
+    keywords: ["Driver's Privacy Protection Act", "DPPA", "privacy", "personally identifiable information", "data breach", "cybersecurity", "information collection"]
+  - id: emerging_technology
+    label: "Emerging vehicle technology"
+    order: 10
+    description: "Automated driving systems, connected vehicles, electric vehicle fees and registration, new mobility."
+    keywords: ["automated driving", "autonomous vehicle", "ADS", "connected vehicle", "electric vehicle", "driver assistance", "ADAS"]
+
+# Fallback for an in-scope item that fits none of the areas above.
+# A record using it gets a one-line reason saying why nothing else fits.
+fallback_policy_area:
+  id: other
+  label: "Other"
+  order: 99
+
+# Where an item is in its lifecycle. One value per classified record.
+stages:
+  - id: pre_publication
+    label: "Public Inspection (not yet published)"
+  - id: proposed
+    label: "Proposed rule or request for comment"
+  - id: final
+    label: "Final or interim final rule"
+  - id: notice
+    label: "Notice, guidance or information collection"
+  - id: announcement
+    label: "Agency announcement (newsroom)"
+  - id: other
+    label: "Other"
+
+# Deadline kinds the store tracks (deadlines/{docketId}).
+deadline_kinds:
+  - id: comment_period_closes
+    label: "Comment period closes"
+  - id: effective_date
+    label: "Effective date"

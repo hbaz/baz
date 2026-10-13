@@ -1,0 +1,45 @@
+# RegWatch zero-server policies (mode 2).
+# Data, not code: mirrored to policy/current in the artifact store.
+# See docs/plans/zero-server/plan.md, section "Policies".
+#
+# HARD LIMITS - enforced in code, NOT settable here or anywhere else.
+# Adding a key for any of these has no effect; configuration validation
+# (zero/schema/config.schema.json) holds them as fixed values.
+#   - Public sources only: the network allowlist plus the source list.
+#     Every source declares data_class: public; a non-public source (or one
+#     with no data_class) is refused at load and never fetched. Non-public
+#     data such as driver, vehicle or member records is never read. Public
+#     content is kept as published (no PII detection or redaction, owner
+#     decision 2026-10-13).
+#   - Citations required on every assessment.
+#   - Nothing dropped silently: failures are recorded (failed source,
+#     needs_review item), never skipped.
+#   - The AI-assisted label on every digest.
+#   - No step drafts positions or comments.
+
+review:
+  # off | advisory | required_for: [direct] | required_for_all
+  # advisory: everything publishes, labelled AI-assisted; reviewers flag or
+  # correct afterwards (owner decision 2026-10-13). Government Affairs may
+  # tighten it at any time.
+  mode: advisory
+
+sources:
+  # Source ids refer to files in zero/pack/sources/{id}.yaml.
+  enabled:
+    - fedreg
+    - fedreg_pi
+    # Agency-filtered Federal Register sources for the three DOT agencies
+    # (spike S2, owner decision): they replace the blocked newsrooms below.
+    - fedreg_dot
+    - fedreg_nhtsa
+    - fedreg_fmcsa
+  # The three DOT newsroom sources (USDOT, NHTSA, FMCSA) ship disabled
+  # (status: blocked_by_site, spike S2 2026-10-13): the sites refuse
+  # non-browser clients. No bot-check workaround is built (owner decision).
+
+run:
+  # Ceiling on items sorted per run (a cost guard).
+  max_items: 300
+  # How many days back each source is scanned.
+  lookback_days: 3

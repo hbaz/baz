@@ -1,0 +1,118 @@
+{
+  "provenance": "synthetic",
+  "source": "fedreg",
+  "note": "Synthesized fixture in the real Federal Register API response shape. Every person's name, company and document number is invented; no response was recorded (this source names people: names_people true).",
+  "request": {
+    "method": "GET",
+    "url": "https://www.federalregister.gov/api/v1/documents.json?fields%5B%5D=abstract&fields%5B%5D=action&fields%5B%5D=agencies&fields%5B%5D=cfr_references&fields%5B%5D=comments_close_on&fields%5B%5D=dates&fields%5B%5D=docket_ids&fields%5B%5D=document_number&fields%5B%5D=effective_on&fields%5B%5D=excerpts&fields%5B%5D=html_url&fields%5B%5D=json_url&fields%5B%5D=pdf_url&fields%5B%5D=public_inspection_pdf_url&fields%5B%5D=publication_date&fields%5B%5D=raw_text_url&fields%5B%5D=regulation_id_numbers&fields%5B%5D=title&fields%5B%5D=type&per_page=2&order=oldest&page=1&conditions%5Bpublication_date%5D%5Bis%5D=2026-10-09"
+  },
+  "status": 200,
+  "response": {
+    "count": 3,
+    "description": "Documents published on 2026-10-09",
+    "total_pages": 2,
+    "next_page_url": "https://www.federalregister.gov/api/v1/documents.json?fields%5B%5D=abstract&fields%5B%5D=action&fields%5B%5D=agencies&fields%5B%5D=cfr_references&fields%5B%5D=comments_close_on&fields%5B%5D=dates&fields%5B%5D=docket_ids&fields%5B%5D=document_number&fields%5B%5D=effective_on&fields%5B%5D=excerpts&fields%5B%5D=html_url&fields%5B%5D=json_url&fields%5B%5D=pdf_url&fields%5B%5D=public_inspection_pdf_url&fields%5B%5D=publication_date&fields%5B%5D=raw_text_url&fields%5B%5D=regulation_id_numbers&fields%5B%5D=title&fields%5B%5D=type&per_page=2&order=oldest&page=2&conditions%5Bpublication_date%5D%5Bis%5D=2026-10-09",
+    "results": [
+      {
+        "title": "Commercial Driver's License Standards; Knowledge Test Translation and Interpreter Use",
+        "type": "Proposed Rule",
+        "abstract": "FMCSA proposes to revise the requirements for administering commercial driver's license knowledge tests in languages other than English. States would be required to use translations approved by the State driver licensing agency and to prohibit the use of interpreters during the knowledge test.",
+        "action": "Notice of proposed rulemaking (NPRM).",
+        "dates": "Comments must be received on or before December 8, 2026.",
+        "document_number": "2026-90301",
+        "html_url": "https://www.federalregister.gov/documents/2026/10/09/2026-90301/commercial-driver's-license-standards-knowledge-test-translation-and-interpreter",
+        "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-09/pdf/2026-90301.pdf",
+        "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-90301.pdf",
+        "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/09/2026-90301.txt",
+        "json_url": "https://www.federalregister.gov/api/v1/documents/2026-90301.json",
+        "publication_date": "2026-10-09",
+        "agencies": [
+          {
+            "raw_name": "DEPARTMENT OF TRANSPORTATION",
+            "name": "Transportation Department",
+            "id": 492,
+            "url": "https://www.federalregister.gov/agencies/transportation-department",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/492",
+            "parent_id": null,
+            "slug": "transportation-department"
+          },
+          {
+            "raw_name": "FEDERAL MOTOR CARRIER SAFETY ADMINISTRATION",
+            "name": "Federal Motor Carrier Safety Administration",
+            "id": 160,
+            "url": "https://www.federalregister.gov/agencies/federal-motor-carrier-safety-administration",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/160",
+            "parent_id": 492,
+            "slug": "federal-motor-carrier-safety-administration"
+          }
+        ],
+        "docket_ids": [
+          "FMCSA-2026-0230"
+        ],
+        "regulation_id_numbers": [
+          "2126-AD15"
+        ],
+        "cfr_references": [
+          {
+            "title": 49,
+            "part": 383,
+            "chapter": null,
+            "citation_url": "https://www.federalregister.gov/select-citation/2026-10-09/49-CFR-383"
+          }
+        ],
+        "comments_close_on": "2026-12-08",
+        "effective_on": null,
+        "excerpts": null
+      },
+      {
+        "title": "Qualification of Drivers; Exemption Renewals; Epilepsy and Seizure Disorders",
+        "type": "Notice",
+        "abstract": "FMCSA announces its decision to renew exemptions for 3 individuals from the requirement that interstate commercial motor vehicle drivers have no established medical history of epilepsy. The individuals are Florian Waddicombe (PA), Gisela Thornquist (WA) and Hollis Brackenridge (NC).",
+        "action": "Notice of renewal of exemptions.",
+        "dates": "Each group of renewed exemptions is applicable on the dates stated in the discussion below.",
+        "document_number": "2026-90302",
+        "html_url": "https://www.federalregister.gov/documents/2026/10/09/2026-90302/qualification-of-drivers-exemption-renewals-epilepsy-and-seizure-disorders",
+        "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-09/pdf/2026-90302.pdf",
+        "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2026-90302.pdf",
+        "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/09/2026-90302.txt",
+        "json_url": "https://www.federalregister.gov/api/v1/documents/2026-90302.json",
+        "publication_date": "2026-10-09",
+        "agencies": [
+          {
+            "raw_name": "DEPARTMENT OF TRANSPORTATION",
+            "name": "Transportation Department",
+            "id": 492,
+            "url": "https://www.federalregister.gov/agencies/transportation-department",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/492",
+            "parent_id": null,
+            "slug": "transportation-department"
+          },
+          {
+            "raw_name": "FEDERAL MOTOR CARRIER SAFETY ADMINISTRATION",
+            "name": "Federal Motor Carrier Safety Administration",
+            "id": 160,
+            "url": "https://www.federalregister.gov/agencies/federal-motor-carrier-safety-administration",
+            "json_url": "https://www.federalregister.gov/api/v1/agencies/160",
+            "parent_id": 492,
+            "slug": "federal-motor-carrier-safety-administration"
+          }
+        ],
+        "docket_ids": [
+          "FMCSA-2026-0102"
+        ],
+        "regulation_id_numbers": [],
+        "cfr_references": [
+          {
+            "title": 49,
+            "part": 391,
+            "chapter": null,
+            "citation_url": "https://www.federalregister.gov/select-citation/2026-10-09/49-CFR-391"
+          }
+        ],
+        "comments_close_on": null,
+        "effective_on": "2026-10-09",
+        "excerpts": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "provenance": "synthetic",
+  "source": "fmcsa_news",
+  "note": "Synthesized fixture in the real shape of an agency newsroom page. Every official's name, quotation and release is invented; no page was recorded (this source names people: names_people true).",
+  "case": "article page in the changed layout",
+  "request": {
+    "method": "GET",
+    "url": "https://www.fmcsa.dot.gov/newsroom/fmcsa-launches-clearinghouse-query-dashboard-state-licensing-agencies"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "response": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>FMCSA Launches Clearinghouse Query Dashboard for State Licensing Agencies | FMCSA</title>\n  <script>window.dataLayer = window.dataLayer || [];</script>\n  <style>.visually-hidden{position:absolute}</style>\n</head>\n<body class=\"path-node page-node-type-news\">\n  <a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">Skip to main content</a>\n  <header class=\"usa-header\" role=\"banner\"><nav class=\"usa-nav\" aria-label=\"Primary navigation\"><ul class=\"usa-nav__primary\"><li><a href=\"/\">Home</a><li><a href=\"/newsroom\">Newsroom</a></ul></nav></header>\n  <main id=\"main-content\" class=\"usa-layout-docs\">\n    <article class=\"usa-prose news-article\">\n      <h1>FMCSA Launches Clearinghouse Query Dashboard for State Licensing Agencies</h1>\n      <p class=\"news-article__date\"><time datetime=\"2026-10-07\">Oct. 7, 2026</time></p>\n        <p>WASHINGTON &ndash; The Federal Motor Carrier Safety Administration today launched a dashboard that shows state licensing agencies the status of their Clearinghouse queries.</p>\n        <p>&ldquo;State agencies told us they needed to see query results in one place,&rdquo; said Chief Safety Officer Anselm Durkwood.</p>\n    </article>\n  </main>\n  <footer class=\"usa-footer\"><p>An official website of the United States government</p></footer>\n</body>\n</html>\n"
+}
